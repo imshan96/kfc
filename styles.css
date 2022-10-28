@@ -209,4 +209,45 @@ nav a:hover {
     }
 
 
+    .kfc {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5rem;
+
+
+
+    }
+
+    .animation-box .left-col {
+        border-right: 3px solid white;
+        font-style: italic;
+        font-size: 1rem;
+        font-family: 'Fasthand', cursive;
+
+
+    }
+
+    .animation-box .right-col,
+    .left-col {
+        padding: 0.5rem 1rem;
+    }
+
+    .animation-box .right-col {
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+
+    .animation-box .right-col span {
+        color: rgb(255, 0, 0)
+    }
+
+
+
+
+
+
+
 }
