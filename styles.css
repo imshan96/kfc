@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@200;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+nav {}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.cart-flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-nav {
+    padding-top: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    color: white;
+
+
+}
+
+.close,
+.menu {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.cart {
+    height: 20px;
+    width: 20px;
+}
+
+.animation-box {
+    background-color: rgba(19, 18, 18, 0.815);
+    display: inline-block;
+    padding: 2rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    color: white;
+    animation: orderBox 1s infinite alternate;
+}
+
+.kfc {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5rem;
+
+
+
+}
+
+.animation-box .left-col {
+    border-right: 3px solid white;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: 'Fasthand', cursive;
+
+
+}
+
+.animation-box .right-col,
+.left-col {
+    padding: 1rem 2rem;
+}
+
+.animation-box .right-col {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.animation-box .right-col span {
+    color: rgb(255, 0, 0)
+}
+
+
+.open {
+
+    right: 0;
+}
+
+
+@keyframes orderBox {
+
+    from {
+
+        transform: rotate(5deg);
+
+    }
+
+    to {
+        transform: rotate(-5deg);
+
+    }
+}
+
+
+@media (max-width:900px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    .contact-nav {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 11111;
+        right: 0;
+        top: 0;
+        background-color: black;
+        height: 100vh;
+        width: 50%;
+        padding: 3rem;
+        right: -100%;
+        transition: 0.5s;
+    }
+
+    nav ul {
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .menu {
+        display: block;
+        margin-top: -3rem;
+    }
+
+    .close {
+        display: block;
+        float: right;
+    }
+
+
+}

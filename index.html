@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul class="contact-nav">
+        <li>Mon-Thu: 10am to 11pm</li>
+        <li>Fri-Sun: 10am to 12pm</li>
+        <li>(+94) 115 532 532</li>
+      </ul>
+      <div class="container">
+        <a href="index.html" class="logo">KFC</a>
+        <nav>
+          <img class="close" src="images/close.svg" alt="" />
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">promotion</a></li>
+            <li><a href="">service</a></li>
+            <li><a href="">gallery</a></li>
+            <li><a href="">contact us</a></li>
+            <li><a href="">our restaurants</a></li>
+            <li>
+              <a href="" class="cart-flex"
+                ><img class="cart" src="images/cart.svg" alt="" />cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <img class="menu" src="images/menu.svg" alt="" />
+      </div>
+      <div class="animation-box">
+        <div class="left-col">
+          <p class="kfc">KFC</p>
+          <p>"it's finger licking good"</p>
+        </div>
+        <div class="right-col">
+          <p><span>START</span> My ORDER</p>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const menu = document.querySelector(".menu");
+      const close = document.querySelector(".close");
+      const nav = document.querySelector("nav");
+
+      menu.addEventListener("click", function () {
+        nav.classList.add("open");
+      });
+
+      close.addEventListener("click", function () {
+        nav.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>
